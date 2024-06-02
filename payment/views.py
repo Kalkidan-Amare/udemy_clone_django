@@ -3,7 +3,7 @@ from .chapa import payment
 from django.contrib import messages
 from django.template import loader
 # Create your views here.
-def pay(request):
+def payment_view(request):
     if request.method == 'POST':
         # Get form data
         first_name = request.POST.get('first_name')
